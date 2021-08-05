@@ -1,0 +1,184 @@
+/* * {box-sizing: border-box} */
+
+/* Full-width input fields */
+  /* input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+} */
+
+/* input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+} */
+
+/* hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+} */
+
+/* Set a style for all buttons */
+/* button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+} */
+
+/* button:hover {
+  opacity:1;
+} */
+
+/* Extra styles for the cancel button */
+/* .cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+} */
+
+/* Float cancel and signup buttons and add an equal width */
+/* .cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+} */
+
+/* Add padding to container elements */
+/* .container {
+  padding: 16px;
+} */
+
+/* Clear floats */
+/* .clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+} */
+
+/* Change styles for cancel button and signup button on extra small screens */
+/* @media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+    width: 100%;
+  }
+} */
+
+
+
+/*
+Ref:
+Thanks to:
+http://www.jqueryscript.net/layout/Simple-jQuery-Plugin-To-Create-Pinterest-Style-Grid-Layout-Pinterest-Grid.html
+*/
+/* CSS used here will be applied after bootstrap.css */
+
+/*======================================
+            Blog 
+========================================*/
+.blog{padding:40px 0;}
+
+.blog-list-content{ padding: 20px 25px;background-color: #f5f8fa;
+    box-shadow: 0 30px 30px 0 rgba(0,0,0,.1);
+ margin:-50px 20px 20px; position: relative; z-index: 1  }
+
+.blog-footer{ padding: 15px 0 ; }
+
+.col-sm-4.blog-list {
+    margin-bottom: 20px;
+    padding: 0px;
+}
+.blog-list-content .title a{ font-size: 18px; font-weight: bold;  
+  color: #666;
+  transition: all .50s;
+     }
+
+     .title:hover{-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: -webkit-gradient(linear,left top,right top,color-stop(0,#ff4c7c),color-stop(50%,#09f),color-stop(80%,#99cb33));}
+
+
+.blog-footer { font-weight: 100;  }
+.blog-footer span{ color:#bfbfbf; margin-left:15px;}
+
+
+img{
+  width: 350px
+}
+
+
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80px;
+  height: 80px;
+  transform: translate(-50%, -50%) rotate(0deg) translate3d(0, 0, 0);
+  animation: loader 1.4s infinite ease-in-out;
+}
+.loader span {
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: #12CB56;
+  animation: loaderBlock 1.4s infinite ease-in-out both;
+}
+.loader span:nth-child(1) {
+  top: 0;
+  left: 0;
+}
+.loader span:nth-child(2) {
+  top: 0;
+  right: 0;
+  animation: loaderBlockInverse 1.4s infinite ease-in-out both;
+}
+.loader span:nth-child(3) {
+  bottom: 0;
+  left: 0;
+  animation: loaderBlockInverse 1.4s infinite ease-in-out both;
+}
+.loader span:nth-child(4) {
+  bottom: 0;
+  right: 0;
+}
+.bcc  {
+  background-color: #2b2a2a;
+}
+@keyframes loader {
+  0%, 10%, 100% {
+      width: 80px;
+      height: 80px;
+ }
+  65% {
+      width: 130px;
+      height: 130px;
+ }
+}
+@keyframes loaderBlock {
+  0%, 30% {
+      transform: rotate(0);
+ }
+  55% {
+      background-color: #f37272;
+ }
+  100% {
+      transform: rotate(360deg);
+ }
+}
+@keyframes loaderBlockInverse {
+  0%, 20% {
+      transform: rotate(0);
+ }
+  55% {
+      background-color: #f37272;
+ }
+  100% {
+      transform: rotate(-360deg);
+ }
+}
+
